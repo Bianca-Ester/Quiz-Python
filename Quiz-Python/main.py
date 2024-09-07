@@ -1,13 +1,13 @@
-import os # biblioteca usada para manipular o sistema
+import os
 
-from q_biblico import quiz_biblico      # Importando a função quiz_biblico
-from q_rita_lee import quiz_rita_lee    # Importando a função quiz_rita_lee
-from q_versace import quiz_versace      # Importando a função quiz_versace  
+from q_biblico import quiz_biblico
+from q_rita_lee import quiz_rita_lee
+from q_versace import quiz_versace
 
 def menu_inicial():
-    controlador = True      # variável controle do loop | inicia verdadeiro | ao trocar por False, o loop é encerrado
+    controlador = True
 
-    while controlador:      # loop da aplicação
+    while controlador:
         limpar_terminal() 
         print("========================================")
         print("|     SEJA BEM-VINDO AO MULTI QUIZ     |")
@@ -36,10 +36,9 @@ def menu_inicial():
             quiz_versace()
         elif quiz != "1" or quiz != "2" or quiz != "3":
             print("Isso é um adeus? 🤧")
-            controlador = False # encerrando aplicação
+            controlador = False
 
 def limpar_terminal():
-    #Função para limpar o terminal
     os.system('cls')
 
-menu_inicial() # chamando a função menu_inicial()
+menu_inicial()
