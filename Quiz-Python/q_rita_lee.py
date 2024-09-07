@@ -57,32 +57,31 @@ def quiz_rita_lee():
 
     score = 0
 
-    for questao in lista_perguntas: # laço que percorre todas as perguntas
+    for questao in lista_perguntas:
         print(questao["pergunta"])
         
-        for opcoes in questao["opcoes"]: # laço interno que percorre todas as opções
+        for opcoes in questao["opcoes"]:
             print(opcoes)
         
         controle = True
         while controle:
             resposta = input("Resposta: ").lower()
 
-            if resposta == questao["resposta"][0].lower(): # se resposta é igual a letra da resposta correta | questao["resposta"][0]
+            if resposta == questao["resposta"][0].lower():
                 print("\n\033[32mResposta correta\033[m 😃\n")
 
                 score += 1
                 controle = False
 
-            elif resposta != "a" and resposta != "b" and resposta != "c": # se resposta for diferente de a, b ou c
+            elif resposta != "a" and resposta != "b" and resposta != "c":
                 print("\nOpção inválida! 🤨\n")
 
-            else: # caso contrário, resposta errada
+            else:
                 print("\n\033[31mResposta errada\033[m 😭")
                 print(f"\nResposta correta: \033[32m{questao['resposta'][1]}\033[m\n")
                 controle = False
 
 
-    # Resultados
     errop = (10 - score) / 10 * 100
     print("\nResultados:")
     if score <= 3:
@@ -97,5 +96,5 @@ def quiz_rita_lee():
     else:
         print("Parabéns, pelo visto seus conhecimentos sobre a Bíblia não deixam a desejar em nada!\nSeu erro percentual foi de {}%".format(errop))
 
-    input("\nDigite qualquer tecla para voltar ao menu inicial...") # prende o terminal para poder exibir o resultado
+    input("\nDigite qualquer tecla para voltar ao menu inicial...")
     
