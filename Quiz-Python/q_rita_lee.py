@@ -85,16 +85,16 @@ def quiz_rita_lee():
     errop = (10 - score) / 10 * 100
     print("\nResultados:")
     if score <= 3:
-        print("Vish, não foi dessa vez...\nSeu erro percentual foi de {}%, mas esperamos que você tenha se divertido e descoberto mais sobre a Bíblia!".format(errop))
+        print("Vish, não foi dessa vez...\nSeu erro percentual foi de {}%, mas esperamos que você tenha se divertido e descoberto mais sobre nossa Rita Lee!".format(errop))
     
     elif score <= 6:
-        print("Um(a) novo(a) convertido(a) na família?\nSeu erro percentual foi de {}%.\nEsperamos que você tenha aprendido coisas novas sobre a Bíblia!".format(errop))
+        print("Uma ovelha negra na família?\nSeu erro percentual foi de {}%.\nEsperamos que você tenha aprendido coisas novas sobre nossa Rita Lee!".format(errop))
     
     elif score <= 9:
-        print("Parabéns, você é um(a) superfã da Bíblia!\nSeu erro percentual foi de apenas {}%!".format(errop))
+        print("Parabéns, você é um(a) superfã da Rita Lee!\nSeu erro percentual foi de apenas {}%!".format(errop))
     
     else:
-        print("Parabéns, pelo visto seus conhecimentos sobre a Bíblia não deixam a desejar em nada!\nSeu erro percentual foi de {}%".format(errop))
+        print("Parabéns, pelo visto seus conhecimentos sobre a Rita não deixam a desejar em nada!\nSeu erro percentual foi de {}%".format(errop))
 
     input("\nDigite qualquer tecla para voltar ao menu inicial...")
     
