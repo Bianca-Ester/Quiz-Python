@@ -34,7 +34,7 @@ def menu_inicial():
         elif quiz == "3":
             limpar_terminal()
             quiz_versace()
-        elif quiz != "1" or quiz != "2" or quiz != "3":
+        else:
             print("Isso é um adeus? 🤧")
             controlador = False
 
