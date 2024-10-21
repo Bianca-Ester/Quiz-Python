@@ -13,7 +13,7 @@ def quiz_rita_lee():
         },
         {
             "pergunta": "3. Qual o nome da 1ª banda que Rita Lee teve?",
-            "opcoes": ["A - Teenage Singers""B - Tutti Frutti" "C - Os Mutantes"],
+            "opcoes": ["A - Teenage Singers", "B - Tutti Frutti", "C - Os Mutantes"],
             "resposta": ["A", "A - Teenage Singers"]
         },
         {
